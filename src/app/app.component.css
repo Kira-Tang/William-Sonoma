@@ -1,0 +1,53 @@
+#container{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+
+#target{
+    position: relative;
+}
+
+.carousal-img{
+    padding-left: 120px;
+}
+#close{
+    background-color: rgba(0.7,0.7,0.7, 0);
+    color: rgba(201, 47, 47, 0.993);
+    border: 0px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+#carousal{
+    position: fixed;
+    width: 600px;
+    height: 410px;
+    top: 10%;
+    left: 25%;
+    right:25%;
+    bottom: 25%;
+    z-index: 4;
+    background-color: rgba(0.7,0.7,0.7, 0.35);
+}
+
+.price{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    background-color: rgba(0.7,0.7,0.7, 0.35);
+    color:white;
+}
+
+.textplacer{
+    background-color: rgba(0.7,0.7,0.7, 0.35);
+    position: absolute;
+    z-index:2; 
+    color:white;
+    font-size: 15px;
+}
+

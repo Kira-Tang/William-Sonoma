@@ -1,0 +1,20 @@
+<div class = "container" id="container" >
+  <div id='target' font-size='5px' *ngFor="let x of feedback;let i = index">
+    <div class='textplacer'>{{x.name}}</div>
+    <img class='imgs' src='{{x.hero.href}}' style.align="center"  (click)='display(x); setIndex(i)'>
+    <div class='price'>Price: ${{x.priceRange.selling.low}}~${{x.priceRange.selling.high}}</div>
+  </div>
+
+
+  <div id='carousal' *ngIf='showCarousal'>
+    <img src = {{url}}>
+    <button (click)='carousalHide()' id='close'>X</button>
+    <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let item of feedback[index].images">
+          <div class="picsum-img-wrapper">
+            <img class='carousal-img'[src]="item.href" alt="picture of chosen one">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+  </div>
+</div>

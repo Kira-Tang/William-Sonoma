@@ -1,0 +1,19 @@
+
+  <div class='container-fluid'>
+    <div class='col-12' *ngIf="productDetails">
+        <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let product of productDetails">
+            <div>
+                <img src="{{product.href}}" alt="{{product.alt}}">
+                <div class="carousel-caption">
+                    <h5>{{prodoutName}}</h5>
+                </div>
+            </div>
+        </ng-template>
+        </ngb-carousel>
+              
+    </div>
+  </div>
+
+
+ 
