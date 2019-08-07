@@ -8,7 +8,7 @@ Clone from the github page, run `npm install` for all the node_modules
 Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. 
 
 ## Further help
-You can send email to ryannzhao95@gmail.com for any question.
+You can send email to tkira9527@gmail.com for any question.
 
 ##test
 Please type in following orders:
